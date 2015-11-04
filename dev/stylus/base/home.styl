@@ -131,66 +131,155 @@ header
     h2
         text-align center
 
-.miniBlock
-    width 55%
-    position absolute
-    
-    h2
-        font-size 35px
-        width 70%
-        margin-bottom 10px
-    
-    .button
-        float left  
-  
-
-.miniSection
-    position relative
-    
-    .miniBlock
-        position absolute
-        left 8%
-        top 30% 
-        
-.mini_2
-    .miniBlock
-        margin-left 35%          
-.miniSection
-    padding-top 5vh
-    padding-bottom 5vh
-    
-    .sectionInterior
-    
-        h2
-            margin-top 0
-            text-align left
-        
-    
-
-    
-    h2
-        text-align center
 
 .mini_1
     background #6ABFBB
+    position relative
+    
+    .button
+        text-align left
 
 .mini_2 
     background-image url("http://fillmurray.com/1200/800");
     background-size cover
     background-repeat no-repeat
     background-position center
+    position relative
+    padding-left 50%
     
-    .sectionInterior
+    h2
+        padding-left 50%
         
-        h2
+    button
+        text-align left !important
+        a
+            margin-left 50% !important
             
     
+ 
+        
+.mini_1, .mini_2, .mini_3
+    height 25vh
+    padding-top 10vh
+    padding-bottom 10vh
+    padding-left 5vh
+    
+    h2 {
+        width 50%
+        font-size 45px 
+        margin-top 0
+        margin-bottom 60px
+    }
+    
+    .button
+        margin 0
+        padding 0
+        
 .mini_3
     background-image url("http://fillmurray.com/1500/800");
     background-size cover
     background-repeat no-repeat
     background-position center
+    position relative
+    
+    
+    
+    .button
+        text-align left
         
-.mini_1, .mini_2, .mini_3
-    height 35vh
-        
+               
+    
+
+
+// home responsive mobile
+
+@media (max-width: 750px) 
+
+    .home 
+          .headerHome
+              height 90vh
+              h2 
+                  font-size 42px
+                  width 50%
+                  margin-left 25%
+                  padding-top 50vh
+                  
+        .sectionInterior    
+                      
+            .sectionHeader
+                font-size 32px !important  
+                
+            .section_1_image
+                h3
+                    display none
+            .section_1_p
+                display none
+                
+            .section_2_p
+                display none
+                
+            .section_3_p
+                display none   
+                
+    .home
+        .section_1, .section_2, .section_3
+            padding-bottom 20px
+            margin-bottom 0
+            
+        .mini_1, .mini_2, .mini_3
+            padding-left 0
+            height 100%
+            padding-top 0
+            padding-bottom 0
+            .button
+                padding-top 15vh
+                padding-bottom 15vh
+                text-align center
+            h2 
+                display none        
+                text-align center
+                
+        .mini_1        
+            .buttonWhite
+                
+                a    
+                    background #6ABFBB
+                    text-align center
+                    
+                    &:hover
+                        background transparent
+                        color #fff
+                        border 1px solid white
+                
+
+                
+        .mini_2 
+            .buttonLightblue
+                padding-left 0
+                text-align center
+                a
+                    background #2A3766
+                    color #fff
+                    border 1px solid white   
+                    
+                    &:hover
+                        background transparent
+                        color #fff
+                        border 1px solid white
+                    
+        .mini_3 
+            .buttonWhite
+                
+                a
+                    background #4FA0CD;
+                    color #fff
+                    border 1px solid white
+                    
+                
+                    &:hover
+                        background transparent
+                        color #fff
+            
+                
+
+            
