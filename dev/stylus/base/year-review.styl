@@ -31,6 +31,16 @@
 	.highlightBlock
 		position relative
 		
+		h2 
+			margin-bottom 2px
+		h3
+			margin-top 0
+			font-weight 300	
+			
+		p 
+			font-weight 300
+			font-size 18px	
+		
 		width 40%
 		&:nth-child(odd)
 			// float right
@@ -40,15 +50,28 @@
 			position absolute
 			top 0
 			right 0
-			background purple
+			text-align left
+			
+			
+			p 
+				text-align left
+				width 75%
 			
 		&:nth-child(even)
 			float left
 			position absolute
 			left 0
 			top 250px
-			background orange
 			// margin-left 10%
+			text-align right
+			
+			p
+				width 75%
+				margin-left 25%
+				
+			h2
+				text-align right
+				
 			
 			
 
