@@ -2,6 +2,10 @@
 	.sectionInterior
 		h1
 			padding-top 160px
+			border-bottom 3px solid $darkGrey
+			
+	.board_1 
+		padding-bottom 85px;	
 			
 	.boardList1, .boardList2
 		text-decoration none
@@ -32,18 +36,33 @@
 		h2
 			padding-top 50px				
 			
+	// .column1
+	// 	padding-right 20%		
 
 	.boardMemberBlock
 		padding-top 50px
 		overflow hidden
-		width 40%
 		float left
-		margin-left 10%
+		width 50%
+		
+		.boardMemberName
+			font-size 20px
+			margin-top 5px
+			margin-bottom 5px
+
+		
+		.boardMemberText
+			margin-top 5px
+			margin-bottom 5px
+			font-weight 300;
+			font-size 20px
 		
 		img
 			max-width 100%
 			height auto
-			width 80%
+			width 90%
+			margin-right 10%
+			border-radius 50%	
 		
 		.boardMemberLeft
 			float left
@@ -51,12 +70,38 @@
 			
 		.boardMemberRight
 			float left
-			width 60%
-			padding-top 3%
+			
+@media (max-width: 1020px)
+	.boardMemberBlock
+		
+		.boardMemberName, .boardMemberText
+			font-size 16px !important
+			
+		.boardMemberLeft
+			width 150px 
+			height 150px
+			
+@media (max-width:500px) 
+	.board_2
+		.boardMemberBlock
+			width 100%	
+			
+@media (max-width: 450px)
+	.board_2
+		.boardMemberBlock
+			width 100%
+			
+		.boardMemberLeft
+			display none
+			
+			img
+				display none					
+			
+
 			
 			
 .board_3
-	background #6ABFBB
+	background #58C5C9
 	padding-top 75px
 	padding-bottom 75px
 	
@@ -73,6 +118,8 @@
 			float left
 			position relative
 			top 25px
+			img
+				border-radius 50%
 			
 		.newMemberRight
 			float left
@@ -86,7 +133,27 @@
 				font-weight 800	
 				span
 					font-weight 300
+					
+
+@media (max-width: 1000px) 
 	
+	.board_3
+		.newMemberBlock
+			.newMemberRight
+				width 100%						
+				margin-left 0
+				
+			.newMemberLeft
+				margin-bottom 15px
+				
+@media (max-width 450px)
+	
+	.board_3
+		.sectionHeader
+			padding-bottom 35px
+		.newMemberBlock
+			.newMemberLeft
+				display none					
 
 
 			

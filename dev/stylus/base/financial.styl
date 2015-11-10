@@ -1,18 +1,36 @@
 .financial
 	h1.sectionHeader
 		padding-top 160px
+		border-bottom 3px solid $darkBlue
 		
 	.financial_1
-		background $lightBlue	
+		background $lightBlue
+		.sectionInterior
+			.section_1_p
+				display block !important	
 	
+
 
 .financial_2
 	padding-top 80px
+		
 	h2
 		padding-bottom 80px
 	table
-		width 100%
+		width 65%
 		margin 0 auto
+		
+@media (max-width: 600px)
+	.financial_2
+		table
+			width 100%	
+			
+@media (max-width: 400px)
+	.financial_2
+		.sectionInterior
+			width 100% !important
+			margin-left 0
+				
 		
 
 .tableBold {
